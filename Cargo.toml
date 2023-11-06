@@ -1,0 +1,25 @@
+[package]
+name = "book-store"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.scripts]
+dev = "cargo watch -c -w src -x run"
+run = "cargo run"
+check = "cargo check"
+build = "cargo build"
+release = "cargo build --release"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "^0.5.0-rc.2", features = ["json"] }
+sea-orm = { version = "^0.11.1", features = [
+    "sqlx-mysql",
+    "runtime-async-std-native-tls",
+    "macros",
+] }
+sea-orm-migration = "^0.11.1"
+jsonwebtoken = "8.2.0"
+bcrypt = "0.14"
+dotenvy = "0.15.6"
