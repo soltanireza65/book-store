@@ -1,17 +1,3 @@
-📕 BookStore
-============
-
-BookStore Management REST API Server in Rust with Rocket, SeaORM and JWT.
-
----
-
-## Udemy Course
-Learn about creating this in my Udemy course: [Creating an API server in Rust with Rocket, SeaORM and JWT by Afaan Bilal](https://www.udemy.com/course/rest-api-server-rust-rocket-seaorm-jwt/?referralCode=0A41F1674B329B330B9F).
-
----
-
-### **Author**: [Afaan Bilal](https://afaan.dev)
-
 ---
 
 ## Run with Docker <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" width="50px" style="float:right" />
@@ -52,7 +38,6 @@ cargo run
 
 ## API
 
-![API](./assets/api.png)
 
 | Method | Path                  | Auth? | Description                                          |
 | :----- | :-------------------- | :---- | :--------------------------------------------------- |
@@ -74,7 +59,6 @@ cargo run
 
 ## Authentication Flow
 
-![Authentication Flow](./assets/authentication_flow.png)
 
 - **All auth required requests**: Add header `token` with the JWT as the value.
 - **Token lifetime**: 4 hours.
@@ -82,16 +66,6 @@ cargo run
 
 ---
 
-## Database Structure
-
-![Database Structure](./assets/db.png)
-
----
-
-## Test
-````
-cargo test
-````
 
 ---
 

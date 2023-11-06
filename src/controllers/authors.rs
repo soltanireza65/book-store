@@ -1,10 +1,3 @@
-/**
- * 📕 BookStore
- *
- * @author Afaan Bilal
- * @link   https://afaan.dev
- * @link   https://github.com/AfaanBilal/bookstore
- */
 use rocket::{
     http::Status,
     serde::{json::Json, Deserialize, Serialize},
