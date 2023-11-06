@@ -1,7 +1,3 @@
----
-
-## Run with Docker <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" width="50px" style="float:right" />
-
 ````
 docker run --rm -it -p 8000:8000 \
     -e ROCKET_ADDRESS=0.0.0.0 \
